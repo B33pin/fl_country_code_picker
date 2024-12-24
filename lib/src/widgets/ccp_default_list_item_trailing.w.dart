@@ -37,7 +37,7 @@ class CcpDefaultListItemTrailing extends StatelessWidget {
       final iconWidth = MediaQuery.of(context).size.width * 0.2;
 
       return SizedBox(
-        width: iconWidth,
+        width: icon == null ? null : iconWidth,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
