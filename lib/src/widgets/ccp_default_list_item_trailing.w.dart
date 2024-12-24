@@ -32,12 +32,12 @@ class CcpDefaultListItemTrailing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (favorites.isNotEmpty) {
+    if ((favorites.isNotEmpty) && (icon != null)) {
       final index = favorites.indexWhere((f) => f == code.code);
       final iconWidth = MediaQuery.of(context).size.width * 0.2;
 
       return SizedBox(
-        width: icon == null ? null : iconWidth,
+        width: iconWidth,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
